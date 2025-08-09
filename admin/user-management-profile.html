@@ -1,0 +1,978 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http: //www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>User Profile - Alerts For Life</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+	<link href="css/animation.css" rel="stylesheet" type="text/css">
+	<link href="font/stylesheet.css" rel="stylesheet" type="text/css" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	<!-- CSS -->
+</head>
+
+<body>
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="javascript:void(0);" class="brand">
+			<img src="images/logo.svg" alt="">
+		</a>
+		<ul class="side-menu">
+			<li class="active">
+				<a href="user-management.html">
+					<img src="images/menu-icons/1.svg" alt="">
+					<span class="text">User Management</span>
+				</a>
+			</li>
+			<li>
+				<a href="alerts-management.html">
+					<img src="images/menu-icons/2.svg" alt="">
+					<span class="text">Alerts Management</span>
+				</a>
+			</li>
+			<li>
+				<a href="tutorial-management.html">
+					<img src="images/menu-icons/3.svg" alt="">
+					<span class="text">Tutorial Management</span>
+				</a>
+			</li>
+			<li>
+				<a href="cookies-management.html">
+					<img src="images/menu-icons/4.svg" alt="">
+					<span class="text">Cookies Management</span>
+				</a>
+			</li>
+			<li>
+				<a href="help-and-support.html">
+					<img src="images/menu-icons/5.svg" alt="">
+					<span class="text">Help And support</span>
+				</a>
+			</li>
+			<li>
+				<a href="faq-management.html">
+					<img src="images/menu-icons/6.svg" alt="">
+					<span class="text">Frequently Asked Questions</span>
+				</a>
+			</li>
+			<li>
+				<a href="about-us.html">
+					<img src="images/menu-icons/7.svg" alt="">
+					<span class="text">About Us</span>
+				</a>
+			</li>
+			<li>
+				<a href="terms-and-conditions.html">
+					<img src="images/menu-icons/8.svg" alt="">
+					<span class="text">Terms & Conditions</span>
+				</a>
+			</li>
+			<li>
+				<a href="privacy-policy.html">
+					<img src="images/menu-icons/9.svg" alt="">
+					<span class="text">Privacy Policy</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#logout" data-dismiss="modal">
+					<img src="images/menu-icons/10.svg" alt="">
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu'><i class="fal fa-bars"></i></i>
+			<div class="admin-icon">
+				<img src="images/admin.svg" alt="">
+				Admin
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+		<!-- MAIN -->
+		<main>
+			<div class="influ-in">
+				<div class="user-profile-wrap">
+					<a href="user-management.html" class="user-profile-back">
+						<i class="far fa-chevron-left"></i> User Management
+					</a>
+					<div class="user-profile-top">
+						<div class="user-profile-image">
+							<img src="images/user-management/profile/1.png" alt="">
+						</div>
+						<ul>
+							<li> <img src="images/user-management/profile/icons/1.svg" alt=""> Danny123 </li>
+							<li> <img src="images/user-management/profile/icons/2.svg" alt=""> Leslie Alexander </li>
+							<li> <img src="images/user-management/profile/icons/3.svg" alt=""> +33 1 70 18 XX XX </li>
+							<li> <img src="images/user-management/profile/icons/4.svg" alt=""> New York </li>
+							<li> <img src="images/user-management/profile/icons/5.svg" alt=""> 138 My Street New York
+							</li>
+							<li> <img src="images/user-management/profile/icons/6.svg" alt=""> example.5531@gmail.com
+							</li>
+							<li> <img src="images/user-management/profile/icons/7.svg" alt=""> USA </li>
+						</ul>
+					</div>
+					<div class="user-profile-in">
+						<ul class="nav nav-pills" id="pills-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1"
+									aria-selected="true">Daily check in details</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-2-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2"
+									aria-selected="false">All Alerts</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-3-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3"
+									aria-selected="false">All Neighbors</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-4-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4"
+									aria-selected="false">Added Contacts</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-5-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5"
+									aria-selected="false">Emergency Contacts</button>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-1" role="tabpanel"
+								aria-labelledby="pills-1-tab" tabindex="0">
+								<div class="influ-table">
+									<div id="table-responsive-1" class="table-responsive">
+										<table>
+											<tbody>
+												<tr>
+													<th>S. No.</th>
+													<th>Check type</th>
+													<th>Alert to</th>
+													<th>Alert text</th>
+													<th>Date</th>
+													<th>Time</th>
+													<th>Action</th>
+												</tr>
+												<tr>
+													<td>1.</td>
+													<td>Yes</td>
+													<td>Dad</td>
+													<td>
+														<div class="view-btn">
+															<a href="javascript:void(0);" data-bs-toggle="modal"
+																data-bs-target="#view-profile-pop">View</a>
+														</div>
+													</td>
+													<td>19/10/2024</td>
+													<td>09:00 PM</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>2.</td>
+													<td>No</td>
+													<td>Mom/Dad/Sister</td>
+													<td>
+														<div class="view-btn">
+															<a href="javascript:void(0);" data-bs-toggle="modal"
+																data-bs-target="#view-profile-pop">View</a>
+														</div>
+													</td>
+													<td>19/10/2024</td>
+													<td>09:00 PM</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>3.</td>
+													<td>Yes</td>
+													<td>Sister</td>
+													<td>
+														<div class="view-btn">
+															<a href="javascript:void(0);" data-bs-toggle="modal"
+																data-bs-target="#view-profile-pop">View</a>
+														</div>
+													</td>
+													<td>19/10/2024</td>
+													<td>09:00 PM</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>4.</td>
+													<td>No</td>
+													<td>Mom</td>
+													<td>
+														<div class="view-btn">
+															<a href="javascript:void(0);" data-bs-toggle="modal"
+																data-bs-target="#view-profile-pop">View</a>
+														</div>
+													</td>
+													<td>19/10/2024</td>
+													<td>09:00 PM</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="influ-pagi">
+										<ul>
+											<li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab"
+								tabindex="0">
+								<div class="influ-table">
+									<div class="influ-table-dropdown">
+										<select>
+											<option value="1">Self-Alert</option>
+											<option value="2">Health-Alert</option>
+										</select>
+									</div>
+									<div id="table-responsive-1" class="table-responsive">
+										<table>
+											<tbody>
+												<tr>
+													<th>S. No.</th>
+													<th>When it was yes</th>
+													<th>Title</th>
+													<th>Emergency Contact</th>
+													<th>Date</th>
+													<th>Time</th>
+													<th>Action</th>
+												</tr>
+												<tr>
+													<td>1.</td>
+													<td>Leslie Alexander</td>
+													<td>Lorem ipsum</td>
+													<td>Lorem ipsum</td>
+													<td>Lorem ipsum</td>
+													<td>09:00 PM</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>2.</td>
+													<td>Sent</td>
+													<td>Lorem ipsum</td>
+													<td>Lorem ipsum</td>
+													<td>Lorem ipsum</td>
+													<td>09:00 PM</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>3.</td>
+													<td>Sent</td>
+													<td>Lorem ipsum</td>
+													<td>Lorem ipsum</td>
+													<td>Lorem ipsum</td>
+													<td>09:00 PM</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>4.</td>
+													<td>Sent</td>
+													<td>Lorem ipsum</td>
+													<td>Lorem ipsum</td>
+													<td>Lorem ipsum</td>
+													<td>09:00 PM</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="influ-pagi">
+										<ul>
+											<li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab"
+								tabindex="0">
+								<div class="influ-table">
+									<div class="influ-table-dropdown">
+										<select>
+											<option value="1">Self-Alert</option>
+											<option value="2">Health-Alert</option>
+										</select>
+									</div>
+									<div id="table-responsive-1" class="table-responsive">
+										<table>
+											<tbody>
+												<tr>
+													<th>S. No.</th>
+													<th>User Name</th>
+													<th>Title</th>
+													<th>Address</th>
+													<th>Date</th>
+													<th>Time</th>
+													<th>Alerts</th>
+													<th>Action</th>
+												</tr>
+												<tr>
+													<td>1.</td>
+													<td>Leslie Alexander</td>
+													<td>Lorem ipsum</td>
+													<td>138 My Street, Kingston</td>
+													<td>08/31/2024</td>
+													<td>09:18 PM</td>
+													<td>
+														<div class="view-btn">
+															<a href="javascript:void(0);" data-bs-toggle="modal"
+																data-bs-target="#view-profile-pop">View</a>
+														</div>
+													</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>2.</td>
+													<td>Leslie Alexander</td>
+													<td>Lorem ipsum</td>
+													<td>138 My Street, Kingston</td>
+													<td>08/31/2024</td>
+													<td>09:18 PM</td>
+													<td>
+														<div class="view-btn">
+															<a href="javascript:void(0);" data-bs-toggle="modal"
+																data-bs-target="#view-profile-pop">View</a>
+														</div>
+													</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>3.</td>
+													<td>Leslie Alexander</td>
+													<td>Lorem ipsum</td>
+													<td>138 My Street, Kingston</td>
+													<td>08/31/2024</td>
+													<td>09:18 PM</td>
+													<td>
+														<div class="view-btn">
+															<a href="javascript:void(0);" data-bs-toggle="modal"
+																data-bs-target="#view-profile-pop">View</a>
+														</div>
+													</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>4.</td>
+													<td>Leslie Alexander</td>
+													<td>Lorem ipsum</td>
+													<td>138 My Street, Kingston</td>
+													<td>08/31/2024</td>
+													<td>09:18 PM</td>
+													<td>
+														<div class="view-btn">
+															<a href="javascript:void(0);" data-bs-toggle="modal"
+																data-bs-target="#view-profile-pop">View</a>
+														</div>
+													</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="influ-pagi">
+										<ul>
+											<li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab"
+								tabindex="0">
+								<div class="influ-table">
+									<div class="influ-table-dropdown">
+										<select>
+											<option value="1">Self-Alert</option>
+											<option value="2">Health-Alert</option>
+										</select>
+									</div>
+									<div id="table-responsive-1" class="table-responsive">
+										<table>
+											<tbody>
+												<tr>
+													<th>S. No.</th>
+													<th>Profile Photo</th>
+													<th>Name</th>
+													<th>Location</th>
+													<th>Relation</th>
+													<th>Contact Number</th>
+													<th>Message</th>
+													<th>Action</th>
+												</tr>
+												<tr>
+													<td>1.</td>
+													<td class="profile-picture">
+														<img src="images/user-management/profile/2.png" alt="">
+													</td>
+													<td>Lorem ipsum</td>
+													<td>10 Miles Away</td>
+													<td>Dad</td>
+													<td>+91 000 0000</td>
+													<td>Lorem Ipsum</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>2.</td>
+													<td class="profile-picture">
+														<img src="images/user-management/profile/2.png" alt="">
+													</td>
+													<td>Lorem ipsum</td>
+													<td>10 Miles Away</td>
+													<td>Dad</td>
+													<td>+91 000 0000</td>
+													<td>Lorem Ipsum</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>3.</td>
+													<td class="profile-picture">
+														<img src="images/user-management/profile/2.png" alt="">
+													</td>
+													<td>Lorem ipsum</td>
+													<td>10 Miles Away</td>
+													<td>Dad</td>
+													<td>+91 000 0000</td>
+													<td>Lorem Ipsum</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>4.</td>
+													<td class="profile-picture">
+														<img src="images/user-management/profile/2.png" alt="">
+													</td>
+													<td>Lorem ipsum</td>
+													<td>10 Miles Away</td>
+													<td>Dad</td>
+													<td>+91 000 0000</td>
+													<td>Lorem Ipsum</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="influ-pagi">
+										<ul>
+											<li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab"
+								tabindex="0">
+								<div class="influ-table">
+									<div class="influ-table-dropdown">
+										<select>
+											<option value="1">Self-Alert</option>
+											<option value="2">Health-Alert</option>
+										</select>
+									</div>
+									<div id="table-responsive-1" class="table-responsive">
+										<table>
+											<tbody>
+												<tr>
+													<th>S. No.</th>
+													<th>Profile Photo</th>
+													<th>Name</th>
+													<th>Location</th>
+													<th>Relation</th>
+													<th>Contact Number</th>
+													<th>Message</th>
+													<th>Action</th>
+												</tr>
+												<tr>
+													<td>1.</td>
+													<td class="profile-picture">
+														<img src="images/user-management/profile/2.png" alt="">
+													</td>
+													<td>Lorem ipsum</td>
+													<td>10 Miles Away</td>
+													<td>Dad</td>
+													<td>+91 000 0000</td>
+													<td>Lorem Ipsum</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>2.</td>
+													<td class="profile-picture">
+														<img src="images/user-management/profile/2.png" alt="">
+													</td>
+													<td>Lorem ipsum</td>
+													<td>10 Miles Away</td>
+													<td>Dad</td>
+													<td>+91 000 0000</td>
+													<td>Lorem Ipsum</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>3.</td>
+													<td class="profile-picture">
+														<img src="images/user-management/profile/2.png" alt="">
+													</td>
+													<td>Lorem ipsum</td>
+													<td>10 Miles Away</td>
+													<td>Dad</td>
+													<td>+91 000 0000</td>
+													<td>Lorem Ipsum</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+												<tr>
+													<td>4.</td>
+													<td class="profile-picture">
+														<img src="images/user-management/profile/2.png" alt="">
+													</td>
+													<td>Lorem ipsum</td>
+													<td>10 Miles Away</td>
+													<td>Dad</td>
+													<td>+91 000 0000</td>
+													<td>Lorem Ipsum</td>
+													<td>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#edit-pop"><img src="images/edit.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#suspend-pop"><img src="images/check.svg"
+																alt=""></a>
+														<a href="javascript:void(0);" data-bs-toggle="modal"
+															data-bs-target="#delete-pop"><img src="images/delete.svg"
+																alt=""></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="influ-pagi">
+										<ul>
+											<li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+	<!-- VIEW-ALERT-TYPE-POPUP -->
+	<div class="modal animate__animated animate__bounceIn my-popup" id="view-profile-pop" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-edit" role="document">
+			<div class="modal-content clearfix">
+				<div class="modal-heading">
+					<button type="button" class="close close-btn-front" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+							<img src="images/cross-pop.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div class="modal-body py-5">
+					<div class="delete-pop-wrap">
+						<form>
+							<div class="delete-pop-inner gap-1">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel mauris sed sapien
+									bibendum rutrum vitae non augue. Nullam interdum sem ut tincidunt pharetra. Quisque
+									sit amet elit turpis. </p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- VIEW-ALERT-TYPE-POPUP -->
+
+	<!-- EDIT-POPUP -->
+	<div class="modal animate__animated animate__bounceIn my-popup" id="edit-pop" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-edit" role="document">
+			<div class="modal-content clearfix">
+				<div class="modal-heading">
+					<button type="button" class="close close-btn-front" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+							<img src="images/cross-pop.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="delete-pop-wrap">
+						<form>
+							<div class="delete-pop-inner gap-1">
+								<h3>Edit</h3>
+								<p>You can edit contact from here:</p>
+							</div>
+							<div class="edit-pop-form">
+								<input type="text" placeholder="Check In" class="edit-field">
+								<input type="text" placeholder="Alert to" class="edit-field">
+								<input type="text" placeholder="Alert type" class="edit-field">
+								<select class="edit-field edit-select">
+									<option value="1">Choose Relation</option>
+									<option value="2" selected>Son</option>
+									<option value="3">Dad</option>
+									<option value="4">Mom</option>
+									<option value="5">Sister</option>
+								</select>
+								<div class="delete-pop-btn">
+									<a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close">Save</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- EDIT-POPUP -->
+
+
+	<!-- ACTIVE-POPUP -->
+	<div class="modal animate__animated animate__bounceIn my-popup" id="active-pop" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-edit" role="document">
+			<div class="modal-content clearfix">
+				<div class="modal-heading">
+					<button type="button" class="close close-btn-front" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+							<img src="images/cross-pop.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="delete-pop-wrap">
+						<form>
+							<div class="delete-pop-inner">
+								<img src="images/active-pop.svg" alt="">
+								<h3>Active</h3>
+								<p>Are you sure you want to Activate <br> this User.</p>
+							</div>
+							<div class="delete-pop-btn">
+								<a href="#" data-bs-dismiss="modal" aria-label="Close">Yes</a>
+								<a href="#" class="active" data-bs-dismiss="modal" aria-label="Close">No</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ACTIVE-POPUP -->
+
+	<!-- SUSPEND-POPUP -->
+	<div class="modal animate__animated animate__bounceIn my-popup" id="suspend-pop" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-edit" role="document">
+			<div class="modal-content clearfix">
+				<div class="modal-heading">
+					<button type="button" class="close close-btn-front" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+							<img src="images/cross-pop.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="delete-pop-wrap">
+						<form>
+							<div class="delete-pop-inner">
+								<img src="images/suspend-pop.svg" alt="">
+								<h3>Suspend</h3>
+								<p>Are you sure you want to Suspend <br> User.</p>
+							</div>
+							<div class="delete-pop-btn">
+								<a href="#" data-bs-dismiss="modal" aria-label="Close">Yes</a>
+								<a href="#" class="active" data-bs-dismiss="modal" aria-label="Close">No</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SUSPEND-POPUP -->
+
+	<!-- DELETE-POPUP -->
+	<div class="modal animate__animated animate__bounceIn my-popup" id="delete-pop" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-edit" role="document">
+			<div class="modal-content clearfix">
+				<div class="modal-heading">
+					<button type="button" class="close close-btn-front" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+							<img src="images/cross-pop.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="delete-pop-wrap">
+						<form>
+							<div class="delete-pop-inner">
+								<img src="images/delete-pop.svg" alt="">
+								<h3>Delete!</h3>
+								<p>Are you sure you want to delete <br> Your Check in details.</p>
+							</div>
+							<div class="delete-pop-btn">
+								<a href="#" data-bs-dismiss="modal" aria-label="Close">Yes</a>
+								<a href="#" class="active" data-bs-dismiss="modal" aria-label="Close">No</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- DELETE-POPUP -->
+
+	<!-- LOGOUT-POPUP -->
+	<div class="modal animate__animated animate__bounceIn my-popup" id="logout" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-edit" role="document">
+			<div class="modal-content clearfix">
+				<div class="modal-heading">
+					<button type="button" class="close close-btn-front" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+							<img src="images/cross-pop.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="delete-pop-wrap">
+						<form>
+							<div class="delete-pop-inner">
+								<img src="images/logout-pop.svg" alt="">
+								<h3>Logout</h3>
+								<p>Are you sure you want to logout?</p>
+							</div>
+							<div class="delete-pop-btn">
+								<a href="admin-login.html">Yes</a>
+								<a href="#" class="active" data-bs-dismiss="modal" aria-label="Close">No</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- LOGOUT-POPUP -->
+	<!-- JS -->
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
+	<script src="js/animation.js" type="text/javascript"></script>
+	<!-- datpicker -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<!-- datpicker -->
+</body>
+
+</html>

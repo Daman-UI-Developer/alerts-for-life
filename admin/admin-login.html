@@ -1,0 +1,77 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Admin Login - Alerts For Life</title>
+	<link rel="icon" type="image/png" href="images/logo.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+	<link href="font/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="css/animation.css" rel="stylesheet" type="text/css">
+	<link href="css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	<!-- CSS -->
+</head>
+
+<body>
+	<!-- MAIN -->
+	<div class="login-wrap">
+		<div class="login-in">
+			<div class="login-logo">
+				<div class="logo">
+					<img src="images/login-page/logo.svg">
+				</div>
+			</div>
+			<div class="login-form">
+				<form class="animate__animated animate__bounceIn">
+					<h1>Log In</h1>
+					<label for="" class="login-lbl">
+						<img src="images/login-page/icons/email.svg">
+						<input type="text" class="login-txt" placeholder="Email" required>
+					</label>
+					<label class="login-lbl mb-0">
+						<img src="images/login-page/icons/password.svg">
+						<input type="password" class="login-txt" id="password" placeholder="Password" required>
+						<div class="password-eye"><i class="fas fa-eye-slash" id="eye"></i></div>
+					</label>
+					<div class="rembr-me"> <input type="checkbox" required> Remember Me </div>
+					<input type="button" data-bs-toggle="modal" data-bs-target="#login-succ" class="login-btn"
+						value="Sign In">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- MAIN -->
+	<!-- LOGIN-SUCCESSFUL-POPUP -->
+	<div class="modal animate__animated animate__bounceIn" id="login-succ" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" data-bs-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content clearfix">
+				<div class="modal-body">
+					<div class="logout-in">
+						<img src="images/login-page/login-succ.svg" alt="">
+						<h1>Login Successful</h1>
+						<p>Welcome to Alerts For Life Admin Panel.</p>
+						<form action="user-management.html" method="POST">
+							<button type="submit" class="logout-in-btn" data-bs-dismiss="modal"
+								aria-label="Close">Okay</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- LOGIN-SUCCESSFUL-POPUP -->
+	<!-- JS -->
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
+	<script src="js/animation.js" type="text/javascript"></script>
+</body>
+
+</html>
